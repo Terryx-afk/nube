@@ -44,65 +44,126 @@
         <div class="tex-bxd" style="position: relative; left: 550px; color: black;">
           <p>Tenemos todo lo necesario para brindar soluciones a sistemas informáticos</p>
         </div>
+        <div class="btn-solicitar">
+          <button class="Solicitar">
+            <a href="contactos.html">Solicitar Demo</a>
+          </button>
+        </div>
+        <div class="btn-informacion">
+            <button class="Informacion">
+             <a href="">Informacion</a>
+            </button>
+        </div>
       </div>
-
-      
 
     </div>
   </div>
 </section>
-<section id="estadisticas">
-     <div class="contador" data-numero="500">0</div>
-     <p>Usuarios activos</p>
-     <div class="contador" data-numero="1000">0</div>
-     <p>Documentos</p>
-     <div class="contador" data-numero="2000">0</div>
-     <p>Empresas Afiliadas</p>
+<section class="stats-horizontal">
+  <div class="stat-box">
+    <h2 class="counter" data-target="2500">0</h2>
+    <p>Clientes satisfechos</p>
+  </div>
+  <div class="stat-box">
+    <h2 class="counter" data-target="3000">0</h2>
+    <p>Proyectos entregados</p>
+  </div>
+  <div class="stat-box">
+    <h2 class="counter" data-target="500">0</h2>
+    <p>Reseñas positivas</p>
+  </div>
 </section>
+
+<div class="Exprestitulo">
+     <div class="presentacion">
+        <h1>SISTEMA TUPHARMAEXPRESS</h1>
+     </div>
+     <div class="parrafoanual">
+          <h3>PLAN MENSUAL / ANUAL</h3>
+     </div>
+</div>
+
 
 
     <script>
-function animarContador(elemento) {
-  const objetivo = +elemento.dataset.numero;
-  let contador = 0;
+const counters = document.querySelectorAll('.counter');
 
-  const incremento = Math.ceil(objetivo / 100);
+const animateCounter = (counter) => {
+  counter.innerText = '0';
+  const target = +counter.getAttribute('data-target');
 
-  const intervalo = setInterval(() => {
-    contador += incremento;
-    if (contador >= objetivo) {
-      elemento.textContent = objetivo;
-      clearInterval(intervalo);
+  const update = () => {
+    const current = +counter.innerText;
+    const increment = target / 200;
+
+    if (current < target) {
+      counter.innerText = `${Math.ceil(current + increment)}`;
+      setTimeout(update, 10);
     } else {
-      elemento.textContent = contador;
+      counter.innerText = target;
     }
-  }, 30);
-}
+  };
 
-let yaAnimado = false;
+  update();
+};
 
-function mostrarContadoresAlHacerScroll() {
-  const contadores = document.querySelectorAll(".contador");
-  const trigger = window.innerHeight - 100;
-
-  contadores.forEach(contador => {
-    const top = contador.getBoundingClientRect().top;
-
-    if (top < trigger && !yaAnimado) {
-      animarContador(contador);
+// Detecta si el contador entra en pantalla (scroll horizontal también)
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      obs.unobserve(entry.target); // Para que se anime solo una vez
     }
   });
+}, {
+  root: null,
+  threshold: 0.5
+});
 
-  if (!yaAnimado) yaAnimado = true;
-}
 
-window.addEventListener("scroll", mostrarContadoresAlHacerScroll);
+counters.forEach(counter => observer.observe(counter));
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
+<footer>
+  <div class="cotactos">
+ <div class="titulopp">
+      <h3>Que Hacemos?</h3>
+      <li>Tiendas Online</li>
+      <li>Webs Corporativas</li>
+      <li>Tiendas Online</li>
+      <li>Markenting Online</li>
+      <li>Consultorio de desarrolo web</li>
+   </div>
+   <div class="redes">
+      <h3>Siguenos en Redes </h3>
+      <div class="botones-redes">
+        <a href="https://www.facebook.com/dsgperu" target="_blank">
+          <img src="images/facebook_logo_icon_147291.ico" alt="facebook">
+        </a>
+        <a href="">
+          <img src="images/instagram_f_icon-icons.com_65485.ico" alt="instagram">
+        </a>
+        <a href="">
+          <img src="images/tiktokxd.ico" alt="tiktok">
+        </a>
+      </div>
+   </div>
+   <div class="cuneta">
+      <div class="parrafo-x">
+          <h3>¿Nos cuentas tu Proyecto?</h3>
+      <li>DSG: empresa de desarrolo y diseño web en Pucallpa o Lima</li>
+      <li>Av. Tupac Amaru 211 Mz A Lt 13 Pucallpa Perú</li>
+      <li>Av. Ejército Cdra 4, Miraflores, Lima, Peru, 15048</li>
+      <li>Tel: 903 148 583</li>
+      <li>Email: proyectos@dsgperutech.com</li>
+      </div>
+   </div>
+  </div>
+</footer>
 <a href="https://wa.me/+51903148583/?text= !Hola! 👋 Estoy interesado(a) en los servicios de DSG Perú Technology SRL. Me gustaría recibir más información sobre sus soluciones de facturación electrónica, alquiler de sistemas informáticos, consultoría TI, outsourcing o desarrollo de software a medida. ¡Gracias!
 
 " class="btn-whatsapp" target="_blank">

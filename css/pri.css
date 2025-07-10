@@ -7,18 +7,133 @@
     bottom: 20px;
     
 }
-#estadisticas{
-    text-align: center;
-    padding: 60px 20px;
+.Exprestitulo{
+   text-align: center;
+}
+.Informacion{
+    display: flex;
+    padding: 10px 90px;
+    transform: translate(800px , -31px);
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.Informacion a{
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+}
+.Solicitar{
+    display: flex;
+    padding: 10px 90px;
+    transform: translate(500px, 20px);
+    background: #2BFFA5;
+    border: 2px solid #2BFFA5;
+    border-radius: 15px;
+}
+.Solicitar a{
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+}
+.stats-horizontal{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    overflow: auto;
+    justify-content: center;
+    transform: translate(0,-150px);
     
-  
 }
-.contador{
-    font-size: 3em;
-    font-weight: bold;
-    color: #ff6600;
-  margin: 20px 0;
+.stat-box{
+    scroll-snap-align: start;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  min-width: 250px;
+  flex: 0 0 auto;
+  text-align: center;
+
 }
+.cuadro{
+    display: flex;
+
+    justify-content: center;
+}
+.titulodos{
+  text-align: center;
+}
+.cuadrograndeinicial{
+    width: 300px;
+    height: 580px;
+    border: 2px solid black;
+    border-radius: 15px; 
+    transform: translate(-245px, 80px);
+}
+.titulopp li{
+ list-style: none;
+}
+.redes{
+    position: relative;
+    text-align: center;
+}
+.titulopp{
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+
+.parrafo-x {
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+    
+}
+.cuneta{
+    
+}
+.parrafo-x li{
+    list-style: none;
+}
+footer{
+    background: #4D4D4D;
+    width: 100%;
+}
+
+.tituloejecutivo{
+    text-align: center;
+}
+.cuadro-inicial{
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+    
+    background: #00F2FE;
+    border-radius: 15px;
+    padding: 1px;
+}
+.cuadro-economico{
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+    background: #00F2FE;
+    border-radius: 15px;
+}
+.cuadro-Ejecutivo{
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+    background: #00F2FE;
+    border-radius: 15px;
+}
+.Titulo{
+    text-align: center;
+}
+
+.counter{
+    color: #013D93;
+    padding: 2rem;
+}
+
 .col{
     color: black;
 }
