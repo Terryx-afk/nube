@@ -5,26 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Server</title>
     <link rel="stylesheet" href="css/pri.css">
-    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<style>html{scroll-behavior: smooth;}</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-         <div class="logo">
-           <img src="images/file.png" alt="logo de marca">
-           <h2 class="logo-nombre">DSG</h2>
-         </div>
-         <nav>
-           <ul class="nav-links">
-              <li><a href="#">Porque</a></li>
-              <li><a href="#">Contactos</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Acerca de nosotros</a></li>
-           </ul>
-         </nav>
-         <a href="#" class="btn-xd"><button>Acerca de nosotros</button></a>
+    <nav class="navbar navbar-expand-lg  fixed-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/file.png" width="40" style="border-radius: 25px;"> DSG</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="principal.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobrenosotros.html">Sobre Nosotros</a></li>
+        <li class="nav-itemdo"><a class="nav-link" href="login.html">¿Eres cliente ? <br>
+          Inicia Sesion</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
+
 
     
 <section class="hero-section d-flex align-items-center" style="min-height: 100vh;">
@@ -32,16 +46,21 @@
     <div class="row align-items-center"> 
 
       <div class="col-md-6">
-        <div class="contenedor-img" style="position: relative; left: -30px; margin-top: -220px;">
+      
+        <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-once="false"
+     data-aos-easing="ease-in-sine" class="contenedor-img" style="position: relative; left: -30px; margin-top: -220px;">
           <img src="images/imagexd-removebg-preview.png
           " class="img-fluid" alt="Laptop">
         </div>
+
 
         <div class="text-white" style="position: relative; left: 500px; margin-top: -340px; color: black;">
           <h1 class="col">¡Servicios Digitales de Calidad que Realmente Necesitas!</h1>
         </div>
 
-        <div class="tex-bxd" style="position: relative; left: 550px; color: black;">
+        <div class="tex-bxd" style="position: relative; left: 500px; color: black;">
           <p>Tenemos todo lo necesario para brindar soluciones a sistemas informáticos</p>
         </div>
         <div class="btn-solicitar">
@@ -63,25 +82,153 @@
   <div class="stat-box">
     <h2 class="counter" data-target="2500">0</h2>
     <p>Clientes satisfechos</p>
+    <img src="images/smile.svg" alt="emojiensvg" height="50px" width="50px">
   </div>
   <div class="stat-box">
     <h2 class="counter" data-target="3000">0</h2>
     <p>Proyectos entregados</p>
+    <img src="images/ora.svg" alt="documento" width="50px" height="50px">
   </div>
   <div class="stat-box">
     <h2 class="counter" data-target="500">0</h2>
     <p>Reseñas positivas</p>
+    <img src="images/positivas.svg" alt="reseñas" width="50px" height="50px">
   </div>
 </section>
+<div class="tituloxa">
+  <div class="presentaciondos">
+          <h2>Todo lo que tu empresa  necesita... <br>
+            En un solo lugar.</h2>
+  </div>
+</div>
+<div class="serviciosxd">
+      <div class="stat-box">
+           <img src="images/factura.png" alt="facturacion">
+           <p>Facturación Electronica</p>
+      </div>
+      <div class="stat-box">
+        <img src="/images/apoyo-tecnico.png" alt="">
+        <p>Soporte Tecnico</p>
+      </div>
+      <div class="stat-box">
+            <img src="images/gestion-de-la-informacion.png" alt="">
+            <p>Sistema de gestion</p>
+      </div>
+      <div class="stat-box">
+         <img src="images/venta-de-entradas.png" alt="">
+         <p>Sistemas para puntos de ventas</p>
+      </div>
+      <div class="stat-box">
+          <img src="images/" alt="">
+          <p>Sistema para restuarentes</p>
+      </div>
+      <div class="stat-box">
+          <img src="images/farmacia.png" alt="">
+          <p>Sistema para botica y farmacias</p>
+      </div>
+</div>
 
-<div class="Exprestitulo">
+<div data-aos="zoom-out-up" class="Exprestitulo">
      <div class="presentacion">
-        <h1>SISTEMA TUPHARMAEXPRESS</h1>
+        <h1>ELIGUE TU PRIMER PLAN</h1>
      </div>
      <div class="parrafoanual">
           <h3>PLAN MENSUAL / ANUAL</h3>
      </div>
 </div>
+<div class="row text-center">
+  <div class="col-md-4">
+    <div data-aos="zoom-in" class="card-plan">
+      <h3>Plan Inicial</h3>
+      <hr>
+      <ul>
+        <li>100 comprobantesde pago mensuales</li>
+        <li>3 Usuarios</li>
+        <li>Soporte Técnico Profesional</li>
+        <li>Video tutoriales</li>
+        <li>Notas de Crédito/Débito</li>
+        <li>1 Caja general</li>
+        <li>Ventas, Compras y Catálogo</li>
+        <li>Alerta de caducidad y agotadas</li>
+        <li>Ecentivos por vendedor</li>
+        <li>Reportes de Precio DIGEMID</li>
+        <li>Multi-Lotes</li>
+      </ul>
+      <a href="contactos.html" class="btn btn-primary mt-3">Contratar</a>
+    </div>
+  </div>
+
+  <div  class="col-md-4">
+    <div data-aos="zoom-in" class="card-plan">
+      <h3>Plan Económico</h3>
+      <hr>
+      <ul>
+        <li>Boletas y Facturas electronicas ELMITADO</li>
+        <li>5 iLIMITADOS</li>
+        <li>Soporte Tecnico Profesional</li>
+        <li>Video Tutoriales</li>
+        <li>-Notas de Crédito / Débito</li>
+        <li>Caja por usuario (multi caja)</li>
+        <li>Módulo ventas</li>
+        <li>Módulo compra (Contado)</li>
+        <li>Catálogo de productos</li>
+        <li>Incentivos por vendedor</li>
+        <li>Módulo inventario</li>
+        <li>Reporte BASICO</li>
+        <li>-Transferencias-Entradas</li>
+        <li>Envió por correo</li>
+        <li>-Reportes de precios DIGEMID</li>
+        <li>-Multi-Lotes</li>
+        <li>-Caja Clega</li>
+        <li>Acumulación de puntos</li>
+        <li>Facturación electrónico
+completo directo a la SUNAT
+e ilimitado
+</li>
+        
+      </ul>
+      <a href="contactos.html" class="btn btn-success mt-3">Contratar</a>
+    </div>
+  </div>
+
+  <div  class="col-md-4">
+    <div data-aos="zoom-in" class="card-plan">
+      <h3>Plan Ejecutivo</h3>
+      <hr>
+      <ul>
+       <li>Boletas y Facturas Electronicas ILIMITADOS</li>
+       <li>Usuarios ILIMITADOS</li>
+       <li>-Soporte Técnico Profesional</li>
+       <li>Videos Tutoriales</li>
+       <li>Notas de Crédito / Débito</li>
+       <li>Caja por usuario (multi caja)</li>
+       <li>Cotización</li>
+       <li>Módulo ventas</li>
+       <li>-Orden de compra</li>
+       <li>Módulo compra (Contado y crédito)</li>
+       <li>-Catálogo de productos</li>
+       <li>Alerta de caducidad y agotados</li>
+       <li>-Incentivos por vendedor</li>
+       <li>Módulo inventario</li>
+       <li>Reporte AVANZADO</li>
+       <li>Transferencias-Entradas/salidas</li>
+       <li>-Envió por correo</li>
+       <li>-Puntos por cliente</li>
+       <li>-Cuentas por pagar</li>
+       <li>-Cuentas por cobrar</li>
+       <li>-Guías de remisión</li>
+       <li>-Comisiones puntos asesores/médicos</li>
+       <li>Reporte de precios DIGEMID</li>
+       <li>-Multi-Lotes</li>
+       <li>-Caja Ciega</li>
+       <li>Acumulación de puntos</li>
+       <li>-Facturación electrónico completo directo a la SUNAT e ilimitado</li>
+      </ul>
+      <a href="contactos.html" class="btn btn-warning mt-3">Contratar</a>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -127,43 +274,56 @@ counters.forEach(counter => observer.observe(counter));
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 <footer>
-  <div class="cotactos">
- <div class="titulopp">
-      <h3>Que Hacemos?</h3>
-      <li>Tiendas Online</li>
-      <li>Webs Corporativas</li>
-      <li>Tiendas Online</li>
-      <li>Markenting Online</li>
-      <li>Consultorio de desarrolo web</li>
-   </div>
-   <div class="redes">
-      <h3>Siguenos en Redes </h3>
-      <div class="botones-redes">
-        <a href="https://www.facebook.com/dsgperu" target="_blank">
-          <img src="images/facebook_logo_icon_147291.ico" alt="facebook">
-        </a>
-        <a href="">
-          <img src="images/instagram_f_icon-icons.com_65485.ico" alt="instagram">
-        </a>
-        <a href="">
-          <img src="images/tiktokxd.ico" alt="tiktok">
-        </a>
-      </div>
-   </div>
-   <div class="cuneta">
-      <div class="parrafo-x">
-          <h3>¿Nos cuentas tu Proyecto?</h3>
-      <li>DSG: empresa de desarrolo y diseño web en Pucallpa o Lima</li>
-      <li>Av. Tupac Amaru 211 Mz A Lt 13 Pucallpa Perú</li>
-      <li>Av. Ejército Cdra 4, Miraflores, Lima, Peru, 15048</li>
-      <li>Tel: 903 148 583</li>
-      <li>Email: proyectos@dsgperutech.com</li>
-      </div>
-   </div>
-  </div>
-</footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/file.png" alt="DSG Logo">
+                        <span>DSG</span>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 20px;">
+                        Soluciones digitales innovadoras para potenciar tu negocio. Ofrecemos servicios de desarrollo web, sistemas de gestión y consultoría tecnológica.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/dsgperu" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/dsgperu/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        
+                        
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Tupac Amaru 211, Pucallpa</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Ejército Cdra 4, Lima</li>
+                        <li><i class="fas fa-phone-alt"></i> +51 903 148 583</li>
+                        <li><i class="fas fa-envelope"></i> proyectos@dsgperutech.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Vie: 9:00 AM - 6:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 DSG Perú Technology SRL. Todos los derechos reservados.</p>
+                <p style="margin-top: 10px;">
+                    <a href="#" style="color: rgba(255,255,255,0.6); margin: 0 10px;">Términos y Condiciones</a> | 
+                    <a href="#" style="color: rgba(255,255,255,0.6); margin: 0 10px;">Política de Privacidad</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 <a href="https://wa.me/+51903148583/?text= !Hola! 👋 Estoy interesado(a) en los servicios de DSG Perú Technology SRL. Me gustaría recibir más información sobre sus soluciones de facturación electrónica, alquiler de sistemas informáticos, consultoría TI, outsourcing o desarrollo de software a medida. ¡Gracias!
 
 " class="btn-whatsapp" target="_blank">
