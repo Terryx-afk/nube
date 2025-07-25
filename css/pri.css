@@ -237,7 +237,7 @@ html, body {
     transform: translate(-245px, 80px);
 }
  footer {
-           background-color: #013D93;
+           background-color: #1F3BB3;
             color: rgb(245, 245, 245);
             padding: 70px 0 30px;
             position: relative;
@@ -300,7 +300,7 @@ html, body {
             margin: 0;
         }
         .footer-column h3{
-          padding-left: 400px;
+           padding-left: 300px;
         }
         .footer-column li {
             margin-bottom: 12px;
@@ -334,24 +334,39 @@ html, body {
             text-align: center;
         }
         
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
+    
+.social-links {
+        display: flex
+;
+    gap: 10px;
+    margin-top: -100px;
+    position: absolute;
+    left: 500px;
+}
+
+.social-links .tituloxada {
+    display: flex;
+    position: absolute;
+    left: -310px;
+    margin-top: -80px;
+}
+
+.social-links .social-icons {
+    
+}
+
+.social-links .social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links .social-icons a:hover {
+    transform: translateY(-3px);
+}
+        p:li{
+            list-style: none;
         }
         
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: rgb(255, 255, 255);
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-        }
         
         .social-links a:hover {
             background-color: var(--secondary);
@@ -408,6 +423,13 @@ html, body {
             .footer-column h3::after {
                 bottom: -8px;
             }
+            .footer-column li{
+                bottom: -10px;
+            }
+            
+  .footer-column .contact-info li {
+    align-items: center;
+  }
         }
 .titulopp{
     color: aliceblue;
@@ -604,6 +626,7 @@ li {
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--text);
+  
 }
 
 h1, h2, h3, h4 {

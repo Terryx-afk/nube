@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-column li{
+    list-style: none;
+    padding: 15px;
+    
+}
+.text-column h2{
+    margin: 30px;
+}
+.text-column{
+    
+    border-radius: 15px;
+    font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 38px;
+    border-radius: 15px;
+    
+}
+.videoxd{
+    border: 5px solid #11eba9;
+    border-radius: 15px;
+    background-color: black;
+}
+.parrafo{
+   position: absolute;
+   right: 340px;
+   margin: 60px;
+}
+.benefits-section li{
+   list-style: none;
+   
+   padding: 10px;
+}
+.tituloasd p{
+    font-weight: 900;
+    font-size: large;
+    text-shadow: 1px 1px 2px red;
+    
+}
+.info-section{
+    text-align: center;
+    font-weight: 900;
+    font-size: large;
+}
+body{
+    font-family: 'Segoe UI', Arial, sans-serif; 
+}
+.video{
+    width: 50%;
+    
+}
+.table{
+    width: 50%;
+}
+.videoxd{
+    justify-content: center;
+}
+.navbar {
+            background-color: #013D93 !important;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 12px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 8px 0;
+            backdrop-filter: blur(10px);
+            background: rgba(26, 26, 46, 0.95) !important;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .navbar-brand {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: rgb(255, 255, 255) !important;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            margin-right: 10px;
+        }
+        
+        .navbar-brand:hover img {
+            transform: rotate(15deg);
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        .nav-link {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9) !important;
+            padding: 8px 15px !important;
+            margin: 0 5px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: rgb(16, 220, 118) !important;
+        }
+        
+        .nav-link:hover::before {
+            width: 70%;
+        }
+        
+        .nav-itemdo .nav-link {
+            background: linear-gradient(to right, var(--secondary), #00e6bf);
+            color: white !important;
+            border-radius: 8px;
+            padding: 8px 20px !important;
+            font-weight: 600;
+            margin-left: 15px;
+            box-shadow: 0 4px 15px rgba(0, 201, 167, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+        }
+        
+        .nav-itemdo .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 201, 167, 0.4);
+        }
+        
+        .nav-itemdo .nav-link::before {
+            display: none;
+        }
+footer{
+    background-color: #013D93;
+    position: relative;
+    color: aliceblue;
+    padding: 50px 70px;
+    overflow: hidden;
+}     
